@@ -23,11 +23,11 @@
           <div class="p-2 flex flex-row items-center justify-between">
             <a
               href="#"
-              class="text-lg font-semibold tracking-widest text-primary uppercase rounded-lg dark-mode:text-white focus:outline-none focus:shadow-outline"
+              class="cursor-pointer text-lg font-semibold tracking-widest text-primary uppercase rounded-lg dark-mode:text-white focus:outline-none focus:shadow-outline"
               >Brillian</a
             >
             <button
-              class="md:hidden rounded-lg focus:outline-none focus:shadow-outline transition-transform duration-300 transform"
+              class="cursor-pointer md:hidden rounded-lg focus:outline-none focus:shadow-outline transition-transform duration-300 transform"
               @click="open = !open"
               :class="{ 'rotate-0': !open, 'rotate-90': open }"
             >
@@ -114,10 +114,11 @@
                 >
                   <a
                     class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-                    href="#"
+                    download
+                    href="assets/CV Kampus Merdeka Brillian.pdf"
                     >Download CV</a
                   >
-                  <a
+                  <!-- <a
                     class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
                     href="#"
                     >Link #2</a
@@ -126,7 +127,7 @@
                     class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
                     href="#"
                     >Link #3</a
-                  >
+                  > -->
                 </div>
               </div>
             </div>
@@ -154,7 +155,7 @@
               </p>
               <a
                 href="https://www.instagram.com/brlyn_mk/"
-                class="text-white bg-primary py-2 px-7 rounded-3xl shadow-lg shadow-emerald-500/40 hover:bg-emerald-500 hover:shadow-emerald-500/20 transition duration-300 ease-in-out"
+                class="cursor-pointer text-white bg-primary py-2 px-7 rounded-3xl shadow-lg shadow-emerald-500/40 hover:bg-emerald-500 hover:shadow-emerald-500/20 transition duration-300 ease-in-out"
                 >Let's Talk</a
               >
             </div>
