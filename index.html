@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html
   lang="en"
-  class="bg-gray-900 overflow-y-auto scrollbar-thin scrollbar-thumb-primary scrollbar-track-gray-800 scroll-smooth"
+  class="overflow-y-auto scrollbar-thin scrollbar-thumb-primary scrollbar-track-gray-800 scroll-smooth"
 >
   <head>
     <meta charset="UTF-8" />
@@ -10,22 +10,22 @@
     <link rel="icon" href="img/Element/logo.png" type="image/png" />
     <link href="dist/output.css" rel="stylesheet" />
   </head>
-  <body>
+  <body class="bg-gray-900 dark:bg-gray-100">
     <!--Hero Section start -->
-    <section id="home" class="bg-gray-700 max-w-full rounded-b-full z-10">
+    <section id="home" class="bg-gray-700 dark:bg-slate-500 max-w-full rounded-b-full z-50">
       <!-- Navbar start -->
 
-      <div class="w-full text-primary fixed z-20">
+      <div class="w-full text-primary fixed z-20 ">
         <div
           x-data="{ open: false }"
-          class="flex flex-col max-w-screen-xl px-2 md:items-center md:justify-between md:flex-row md:px-6 lg:px-8 bg-gray-800 bg-opacity-50 backdrop-filter backdrop-blur-lg mx-5 my-3 rounded-3xl"
+          class="flex flex-col max-w-screen-xl px-2 md:items-center md:justify-between md:flex-row md:px-6 lg:px-8 bg-gray-800 dark:bg-gray-400 dark:bg-opacity-50 bg-opacity-50 backdrop-filter backdrop-blur-lg mx-5 my-3 rounded-3xl"
         >
           <div class="p-2 flex flex-row items-center justify-between">
             <a
               href="#"
               class="cursor-pointer text-lg font-semibold tracking-widest text-primary uppercase rounded-lg dark-mode:text-white focus:outline-none focus:shadow-outline"
-              >Brillian</a
-            >
+              >Brillian</a>
+            
             <button
               class="cursor-pointer md:hidden rounded-lg focus:outline-none focus:shadow-outline transition-transform duration-300 transform"
               @click="open = !open"
@@ -153,6 +153,7 @@
                 Second-year IT student at Politeknik Semen Indonesia. Passionate
                 about web development and programming.
               </p>
+
               <a
                 href="https://www.instagram.com/brlyn_mk/"
                 class="cursor-pointer text-white bg-primary py-2 px-7 rounded-3xl shadow-lg shadow-emerald-500/40 hover:bg-emerald-500 hover:shadow-emerald-500/20 transition duration-300 ease-in-out"
@@ -193,8 +194,23 @@
       </div>
     </section>
     <!--Hero section end -->
+    <h1 class="max-w-full text-center font-bold text-2xl p-4 text-primary dark:text-emerald-800 mt-20">
+      Theme
+    </h1>
+    <div class="flex justify-center ">
+      
+      <span class="text-sm text-slate-200 mr-2 dark:text-black font-bold ">Dark</span>
+    <input type="checkbox" class="hidden" id="toggle-dark">
+    <label for="toggle-dark">
+      <div class="w-9 h5 bg-gray-600 rounded-full p-1 cursor-pointer">
+        <div class="h-4 w-4 bg-slate-100 rounded-full flex items-center toggle-circle dark:translate-x-3 transition-all duration-500 ease-in-out "></div>
+      </div>
+    </label>
+    <span class="text-sm text-slate-100 ml-2 dark:text-black font-bold">Light</span>
+    </div>
     <!-- About Section -->
     <section id="about">
+
       <div class="mt-32 flex flex-wrap">
         <div class="m-auto flex justify-center lg:w-1/2">
           <img
@@ -205,11 +221,11 @@
           />
         </div>
         <div class="lg:w-1/2">
-          <h1 class="max-w-full text-center font-bold text-2xl p-4 text-white">
+          <h1 class="max-w-full text-center font-bold text-2xl p-4 text-white dark:text-black">
             About <span class="text-primary"> Me</span>
           </h1>
           <p
-            class="text-white font-thin text-xs lg:text-xl m-auto tracking-wider mx-10"
+            class="text-white font-thin text-sm lg:text-xl m-auto tracking-wider mx-10 dark:text-black"
           >
             I am a second-year student at Politeknik Semen Indonesia, majoring
             in Information Technology with a strong interest in web development
@@ -300,7 +316,7 @@
     <!-- About Section End -->
     <!-- My Skill Start -->
     <section class="container mt-20">
-      <h1 class="max-w-full text-center font-bold text-2xl mb-5 text-white">
+      <h1 class="max-w-full text-center font-bold text-2xl mb-5 text-white dark:text-black">
         My <span class="text-primary">Skills</span>
       </h1>
       <div
@@ -440,14 +456,14 @@
       <div
         class="isolate pb-10 w-full rounded-xl bg-gray-800/20 ring-1 ring-primary/50 shadow-[0_10px_20px_#34d399]"
       >
-        <h1 class="max-w-full text-center font-bold text-2xl p-4 text-white">
+        <h1 class="max-w-full text-center font-bold text-2xl p-4 text-white dark:text-black">
           My <span class="text-primary"> Portfolio</span>
         </h1>
         <div
           class="flex flex-col justify-center md:grid md:grid-cols-2 px-5 gap-4 lg:grid-cols-3 lg:grid lg:gap-5"
         >
           <div
-            class="max-w-sm my-2 bg-gray-700 border border-primary rounded-lg mx-auto hover:shadow-[5px_5px_0px_0px_#34d399] transition-all duration-500"
+            class="max-w-sm my-2 bg-gray-700 border border-primary rounded-lg mx-auto hover:shadow-[5px_5px_0px_0px_#34d399] transition-all duration-500 dark:bg-gray-500"
           >
             <a href="#">
               <picture class="rounded-lg block overflow-hidden">
@@ -468,7 +484,7 @@
                   Responsive Website Gallery
                 </h5>
               </a>
-              <p class="mb-3 font-normal text-black dark:text-gray-400">
+              <p class="mb-3 font-normal text-white dark:text-gray-100">
                 a website that displays a gallery of responsive website designs.
                 This is a source of inspiration for developing sites that adapt
                 their appearance to various devices.
@@ -498,7 +514,7 @@
           </div>
           <!-- Card 2 -->
           <div
-            class="max-w-sm my-2 bg-gray-700 border border-primary rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 mx-auto hover:shadow-[5px_5px_0px_0px_#34d399] transition-all duration-500"
+            class="max-w-sm my-2 bg-gray-700 border border-primary rounded-lg shadow dark:bg-gray-500 mx-auto hover:shadow-[5px_5px_0px_0px_#34d399] transition-all duration-500"
           >
             <a href="#" class="block overflow-hidden">
               <picture class="rounded-lg block overflow-hidden">
@@ -517,14 +533,14 @@
                   Simple Portfolio Website
                 </h5>
               </a>
-              <p class="mb-3 font-normal text-black dark:text-gray-400">
+              <p class="mb-3 font-normal text-white dark:text-gray-100">
                 a platform that displays works in a minimalist design. With a
                 simple but attractive layout, the site allows users to easily
                 navigate and enjoy the portfolio on display.
               </p>
               <a
                 href="https://github.com/who-is-brillian/Brillian_portofolio1"
-                class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-primary rounded-lg hover:bg-emerald-700 focus:ring-1 focus:outline-none focus:bg-emerald-700dark:bg-primary dark:hover:bg-emerald-700 dark:focus:ring-offset-green-400 transition-all duration-300"
+                class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-primary rounded-lg hover:bg-emerald-700 focus:ring-1 focus:outline-none focus:bg-emerald-700 dark:bg-primary dark:hover:bg-emerald-700 dark:focus:ring-offset-green-400 transition-all duration-300"
               >
                 View more
                 <svg
@@ -547,7 +563,7 @@
           </div>
           <!-- Card 3 -->
           <div
-            class="max-w-sm my-2 bg-gray-700 border border-primary rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 mx-auto hover:shadow-[5px_5px_0px_0px_#34d399] transition-all duration-500"
+            class="max-w-sm my-2 bg-gray-700 border border-primary rounded-lg shadow dark:bg-gray-500 mx-auto hover:shadow-[5px_5px_0px_0px_#34d399] transition-all duration-500"
           >
             <a href="#" class="block overflow-hidden">
               <picture class="rounded-lg block overflow-hidden">
@@ -566,7 +582,7 @@
                   My Travel Website
                 </h5>
               </a>
-              <p class="mb-3 font-normal text-black dark:text-gray-400">
+              <p class="mb-3 font-normal text-white dark:text-gray-100">
                 a place where I share personal travel experiences with stories
                 and photos. With an attractive design, the site invites visitors
                 to reflect and perhaps gain inspiration for their own journey.
@@ -601,7 +617,7 @@
     <!-- Education background start -->
     <section
       id="blog"
-      class="mt-24 bg-slate-800"
+      class="mt-24 bg-slate-800 dark:bg-gray-200"
       style="
         background-image: url(img/Element/grey-prev-ui.png);
         background-position: center;
@@ -609,7 +625,7 @@
         background-size: cover;
       "
     >
-      <h1 class="max-w-full text-center font-bold text-2xl p-4 text-white">
+      <h1 class="max-w-full text-center font-bold text-2xl p-4 text-white dark:text-black">
         My <span class="text-primary"> Education</span>
       </h1>
       <div
@@ -640,7 +656,7 @@
     <!-- blog section start -->
     <section class="py-12" id="blog">
       <div class="container mx-auto px-4">
-        <h1 class="max-w-full text-center font-bold text-2xl p-4 text-white">
+        <h1 class="max-w-full text-center font-bold text-2xl p-4 text-white dark:text-black">
           My <span class="text-primary"> Blog</span>
         </h1>
         <div class="grid gap-6 grid-cols-1 md:grid-cols-2">
@@ -762,7 +778,7 @@
     <!-- Blog Section End -->
     <!-- Contact Section Start -->
     <section class="mx-3" id="contact">
-      <h1 class="max-w-full text-center font-bold text-2xl p-4 text-white">
+      <h1 class="max-w-full text-center font-bold text-2xl p-4 text-white dark:text-black">
         Contact <span class="text-primary"> Me</span>
         </h1>
         <div
@@ -776,7 +792,7 @@
         </div>
       <div class="my-2">
         <div
-          class="grid sm:grid-cols-2 items-center gap-16 p-8 mx-auto max-w-4xl bg-gray-800 shadow-[0_2px_10px_-3px_#34d399] rounded-md text-white font-[sans-serif]"
+          class="grid sm:grid-cols-2 items-center gap-16 p-8 mx-auto max-w-4xl bg-gray-800 dark:bg-gray-500 shadow-[0_2px_10px_-3px_#34d399] rounded-md text-white font-[sans-serif]"
         >
         <div>
           <h1 class="text-3xl font-extrabold text-primary">Let's Talk</h1>
@@ -870,14 +886,14 @@
     <!-- Contact Section End -->
 
     <!--Footer Start -->
-    <footer id="footer" class="bg-dark pt-24 pb-12">
+    <footer id="footer" class="bg-gray-800 dark:bg-gray-400 pt-24 pb-12 mt-32">
       <div class="container">
         <div class="flex flex-wrap">
-          <div class="w-full px-4 mb-12 text-slate-300 font-medium md:w-1/3">
+          <div class="w-full px-4 mb-12 text-slate-300 dark:text-gray-700 font-medium md:w-1/3">
             <h2 class="font-bold text-4xl text-primary mb-5">
               Muhammad Brillian Mujahid Kamal
             </h2>
-            <h3 class="font-bold text-2xl mb-2 text-primary">Contact Me</h3>
+            <h3 class="font-bold text-2xl mb-2 text-primary dark:text-gray-700">Contact Me</h3>
             <p>brillianhernandez@gmail.com</p>
             <p>Tebaloan, Kec.Duduksampeyan</p>
             <p>Kabupaten Gresik</p>
@@ -886,7 +902,7 @@
             <h3 class="font-semibold text-xl mb-5 text-primary">
               Writing Category
             </h3>
-            <ul class="text-slate-300">
+            <ul class="text-slate-300 dark:text-gray-700">
               <li>
                 <a
                   href="#"
@@ -912,7 +928,7 @@
           </div>
           <div class="w-full px-4 mb-12 md:w-1/3">
             <h3 class="font-semibold text-xl text-primary mb-5">Link</h3>
-            <ul class="text-slate-300">
+            <ul class="text-slate-300 dark:text-gray-700">
               <li>
                 <a
                   href="#"
@@ -1049,6 +1065,7 @@
       </div>
     </footer>
     <!-- Footer End -->
+     
     <script
       src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"
       defer

@@ -26,3 +26,15 @@ form.addEventListener("submit", (e) => {
     })
     .catch((error) => console.error("Error!", error.message));
 });
+
+// Dark mode toggle
+const checkBox = document.querySelector("#toggle-dark");
+const html = document.querySelector('html');
+
+checkBox.addEventListener('click', function() {
+  if (checkBox.checked) {
+    html.classList.add('dark');
+  } else {
+    html.classList.remove('dark');
+  }
+});

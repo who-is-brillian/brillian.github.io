@@ -1,13 +1,11 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["index.html"],
+  darkMode: "class",
+  content: ["index.html", "script.js"],
   theme: {
     extend: {
       colors: {
         primary: "#34d399",
-      },
-      backgroundImage: {
-        bgimg: "url('img/Element/bg-black.png')",
       },
     },
   },
