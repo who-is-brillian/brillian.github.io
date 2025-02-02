@@ -38,3 +38,11 @@ checkBox.addEventListener('click', function() {
     html.classList.remove('dark');
   }
 });
+
+// background mousemove
+document.addEventListener("mousemove", (e) => {
+  let x = (e.clientX / window.innerWidth) * 100;
+  let y = (e.clientY / window.innerHeight) * 100;
+  document.querySelector(".background").style.background = 
+    `radial-gradient(circle at ${x}% ${y}%, rgba(255, 255, 255, 0.2) 0%, transparent 50%)`;
+});
